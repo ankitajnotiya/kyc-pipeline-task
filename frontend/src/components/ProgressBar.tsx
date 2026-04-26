@@ -6,6 +6,7 @@ interface ProgressBarProps {
 }
 
 const ProgressBar: React.FC<ProgressBarProps> = ({ currentStep, totalSteps }) => {
+  // totalSteps parameter is currently unused but kept for future use
   const steps = ['Personal', 'Documents', 'Bank Details'];
   
   return (

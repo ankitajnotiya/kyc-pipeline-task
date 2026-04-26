@@ -12,9 +12,9 @@ const LandingPage: React.FC = () => {
     navigate('/status');
   };
 
-  const handleAdminDashboard = () => {
-    navigate('/admin');
-  };
+  // const handleAdminDashboard = () => {
+  //   navigate('/admin');
+  // };
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white mt-0 pt-0">

@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import { KYCData } from '../types/kyc';
 import { kycApi } from '../services/kycApi';
 
 const AdminDashboard: React.FC = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const [kycQueue, setKycQueue] = useState<KYCData[]>([]);
   const [loading, setLoading] = useState(true);
   const [refreshLoading, setRefreshLoading] = useState(false);
   const [error, setError] = useState('');
   const [selectedKYC, setSelectedKYC] = useState<KYCData | null>(null);
-  const [timers, setTimers] = useState<{ [key: number]: string }>({});
+  // const [timers, setTimers] = useState<{ [key: number]: string }>({});
 
   useEffect(() => {
     fetchKYCQueue();
@@ -65,7 +65,7 @@ const AdminDashboard: React.FC = () => {
       }
     });
     
-    setTimers(newTimers);
+    // setTimers(newTimers);
   };
 
   const handleStatusUpdate = async (kycId: number, newStatus: string) => {
