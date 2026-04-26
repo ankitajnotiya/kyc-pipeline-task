@@ -34,3 +34,16 @@ npm install
 npm run dev
 ```
 Frontend runs on: http://localhost:5173/
+
+## Login Credentials
+
+### For Testing/Demo:
+- **Reviewer Account**: `ankit` / `admin123`
+- **Merchant Account 1**: `ankit` / `admin123`
+- **Merchant Account 2**: `test1` / `test123`
+
+### To Create Seed Data:
+```bash
+cd backend
+python seed_data.py
+```
